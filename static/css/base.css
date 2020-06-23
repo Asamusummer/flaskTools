@@ -1,0 +1,523 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "PangMenFont";
+    src: url("/static/css/font/PangMenFont.woff2") format("woff2"), url("/static/css/font/PangMenFont.woff") format("woff"), url("/static/css/font/PangMenFont.ttf") format("truetype"), url("/static/css/font/PangMenFont.eot") format("embedded-opentype"), url("/static/css/font/PangMenFont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(/static/images/allbg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 1000px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.title_div {
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title_div img {
+    height: 172px;
+    width: 825px;
+}
+
+.content_div {
+    width: 100%;
+    height: calc(100% - 72px);
+    position: relative;
+}
+
+.content_div_index {
+    width: 95%;
+    height: calc(95% - 3px);
+    position: relative;
+    left: 2%;
+}
+
+.left {
+    position: absolute;
+    height: 60%;
+    top: 0px;
+    left: 30px;
+}
+
+.right {
+    position: absolute;
+    height: 55%;
+    right: 30px;
+    bottom: 30px;
+}
+
+.block {
+    width: 100%;
+    max-height: 100%;
+    background: #0c1726;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 30px #fff;
+    position: relative;
+    color: #fff;
+}
+
+.block.blue {
+    box-shadow: inset 0 0 30px #0c7eff;
+    border-left-color: #0c7eff;
+}
+
+.block.blue .color {
+    color: #0c7eff;
+    text-shadow: 0 0 5px rgba(12, 126, 255, 0.7);
+}
+
+.block.blue .title {
+    background-color: rgba(12, 126, 255, 0.3);
+    font-family: 'PangMenFont';
+}
+
+.block.blue i {
+    color: rgba(12, 126, 255, 0.7);
+    text-shadow: 0 0 5px rgba(12, 126, 255, 0.7);
+}
+
+.block.blue.active {
+    background-color: rgba(12, 126, 255, 0.5);
+}
+
+.block.blue.active i {
+    color: #333;
+}
+
+.block.blue.out:before {
+    content: '\f45c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 32px;
+    color: #0c7eff;
+    text-shadow: 0 0 1px rgba(12, 126, 255, 0.7);
+    position: absolute;
+    line-height: 1;
+    bottom: -3px;
+    left: -3px;
+    z-index: -1;
+}
+
+.block.blue.out:after {
+    content: '\f45c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 32px;
+    color: #0c7eff;
+    text-shadow: 0 0 1px rgba(12, 126, 255, 1);
+    position: absolute;
+    line-height: 1;
+    top: -3px;
+    right: -3px;
+    z-index: -1;
+}
+
+.block .title {
+    height: 44px;
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 44px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.block ul {
+    height: calc(100% - 44px);
+    overflow-y: auto;
+    position: relative;
+}
+
+.block ul li.list-group-item {
+    border: 0 solid #fff;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+}
+
+.block ul li.list-group-item.warning {
+    color: #f00;
+    font-weight: bold;
+}
+
+.block ul li.list-group-item:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.block ul li.list-group-item:nth-child(odd) {
+    background-color: rgba(12, 126, 255, 0.2);
+}
+
+.main_content_div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    left: 90px;
+}
+
+.main_content_div_index {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.left_content_div {
+    width: 17%;
+    height: 100%;
+    display: flex;
+    padding: 80px 40px 50px 0px;
+    flex-direction: column;
+}
+
+.center_content_div {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    padding: 80px 40px 50px 0px;
+    flex-direction: column;
+}
+
+.center_visitor_div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 80px 40px 50px 0px;
+    flex-direction: column;
+}
+
+.right_content_div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 80px 40px 50px 0px;
+    flex-direction: column;
+}
+
+.right_visitor_div {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    padding: 80px 40px 50px 0px;
+    flex-direction: column;
+}
+
+.person_div {
+    height: calc(50% - 35px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.class_div {
+    height: calc(50% - 35px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.attend_div {
+    height: calc(100% - 40px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right_top_div {
+    height: calc(50% - 35px);
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.sport_div {
+    height: calc(50% - 35px);
+    width: 100%;
+}
+
+.record_div {
+    height: 100%;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.month_div {
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+.round_icon {
+    width: 30%;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.person_name_sex_div {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.person_name {
+    height: 100%;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 6px;
+    text-align: center;
+}
+
+.class_name {
+    height: 10%;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.postion_name {
+    height: 10%;
+    margin-top: 38px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.now_postion_name {
+    height: 10%;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #0c7eff;
+    text-align: center;
+}
+
+.sex_icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 8px;
+}
+
+.select_div {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.search_div {
+    background-color: #0c4B93;
+    height: 30px;
+    width: calc(50% - 10px);
+    color: #fff;
+    font-size: 12px;
+    border: none;
+    letter-spacing: 1px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.class_chart_div {
+    height: calc(100% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#class_chart {
+    width: 100%;
+    height: 100%;
+}
+
+.sprot_img {
+    width: 100%;
+    height: calc(100% - 44px);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.chart_title {
+    position: absolute;
+    font-family: 'PangMenFont';
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: left;
+    text-shadow: 0 0 50px rgb(12, 126, 255);
+}
+
+#month_chart {
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    width: calc(100% - 80px);
+    border: none;
+    border-top: 1px solid rgba(12, 126, 255, 0.7);
+    margin: 0px;
+}
+
+.attend_title {
+    font-family: 'PangMenFont';
+    width: calc(100% - 80px);
+    height: 25px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.class_attend_div {
+    width: 100%;
+    margin-top: 23px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.class_attend_list {
+    display: flex;
+}
+
+.class_attend_item {
+    width: 50%;
+    font-size: 14px;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 8px; /*滚动条宽度*/
+    height: 8px; /*滚动条高度*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /*滚动条的背景区域的圆角*/
+    background-color: rgba(0, 0, 0, .3) /*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px; /*滚动条的圆角*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(12, 126, 255, 0.4); /*滚动条的背景颜色*/
+}
+
+.block table {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.block table thead {
+    background-color: rgba(1, 1, 1, 0.1);
+    height: 25px;
+}
+
+.block table td,
+.block table th {
+    border-width: 0;
+    font-size: 12px;
+    line-height: 2;
+    height: 25px;
+    vertical-align: center;
+}
+
+.block table tbody {
+    overflow-y: auto;
+    height: calc(100% - 25px);
+}
+
+.block table tbody tr {
+    height: 25px;
+    width: 100%;
+}
+
+.block table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.block table tbody tr:nth-child(odd) {
+    background-color: rgba(12, 126, 255, 0.2);
+}
+
+.block table thead tr th {
+    color: #c9c9c9;
+}
+
+.visitor_div {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-self: center;
+}
+
+.visitor_img img {
+    width: 100%;
+    height: auto;
+}
+
+.visitor_sport {
+    width: 100%;
+    height: 100%;
+}
+
+.visitor_attend_div {
+    height: calc(100% - 40px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main_title {
+    font-family: PangMenFont;
+    color: #ffffff;
+    text-shadow: .2rem 0rem .5rem #0c7eff, -.2rem 0rem .5rem #0c7eff, 0rem .2rem .5rem #0c7eff, 0rem -.2rem .5rem #0c7eff;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#attend table > tbody > tr:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

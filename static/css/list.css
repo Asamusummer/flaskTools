@@ -1,0 +1,318 @@
+body, input, td, div, select, button, textarea {
+    font-family: "Microsoft Yahei", Arial,Century Gothic,Verdana, Geneva, sans-serif;
+}
+.list_top {
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_top label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.list_top_btn span {
+    opacity: 1;
+    color: #0c7eff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.list_top_btn span:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    background-color: #0b3161;
+    height: 1px;
+    padding-right: 10px;
+}
+
+.searchback {
+    padding: 10px 0px;
+}
+
+.searchform {
+    display: flex;
+    /*height: 500px;*/
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.form-style {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0px;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+
+.form-style > p {
+    width: 80px;
+    padding: 0px;
+    /*color: #0c7eff;*/
+    font-size: 14px;
+}
+
+.form-style input {
+    width: 240px;
+    height: 38px;
+      border: 1px solid #0C2D52;
+    font-size: 14px;
+    color:#fff;
+    padding: 0px 20px 0px 20px;
+    background-color: rgba(12, 126, 255, 0.1);
+}
+
+.form-style select {
+    width: 150px;
+    height: 38px;
+    border: 1px solid #0C2D52;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 20px 0px 20px;
+    background-color: rgba(12, 126, 255, 0.1);
+}
+
+.form-style select option {
+    background-color: rgb(13, 42, 70);
+    border: 1px solid #0c7eff;
+}
+
+.form-style button {
+    padding-left: 25px;
+    padding-right:25px;
+    height: 38px;
+       background-color: #31445A;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #c9c9c9;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c9c9c9;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c9c9c9;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #c9c9c9;
+}
+
+.listheight {
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 730px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.permlistheight {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 660px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.liststateheight {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.table > thead > tr > th {
+    color: #ffffff;
+    font-size: 16px;
+    border-bottom: 1px solid #08274a;
+    vertical-align: middle;
+}
+
+.table > tbody > tr td {
+    /*color: #abd2ff;*/
+    color: white;
+    font-size: 14px;
+    /*border-bottom: 1px solid #08274a;*/
+    vertical-align: middle;
+}
+
+.table > tbody > tr td:first-child:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.listbottom {
+    margin-top: 10px;
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+}
+
+.listbottom input {
+    width: 40px;
+    height: 26px;
+    border: 1px solid #0c7eff;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    background-color: rgba(12, 126, 255, 0.1);
+}
+
+.listbottom button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 0px;
+    background-color: transparent
+}
+
+.listbottom p {
+    color: #ffffff;
+    width: 60px;
+    height: 26px;
+    font-size: 12px;
+}
+
+.sprot_img {
+
+}
+
+td a {
+    color: #abd2ff;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 8px; /*滚动条宽度*/
+    height: 8px; /*滚动条高度*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /*滚动条的背景区域的圆角*/
+    background-color: rgba(0, 0, 0, .3) /*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+    border-radius: 10px; /*滚动条的圆角*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(12, 126, 255, 0.4); /*滚动条的背景颜色*/
+}
+
+.table th {
+    text-align: center;
+}
+
+.btn-primary {
+    color: #fff;
+  background-color: #244771;
+    border-color: #244771;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #8D6968;
+    border-color: #8D6968;
+}
+.modal-content {
+    background-color: #274161;
+    color: #fff;
+}
+.modal-header {
+    border-bottom: 0 solid #274161;
+}.modal-header h4 {
+    color: #fff;
+}
+.table-dialog > tbody > tr td {
+     background-color: #274161;
+}
+.form-control{
+    width: 240px;
+    height: 38px;
+    border: 1px solid #0C2D52;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 20px 0px 20px;
+    background-color: rgba(12, 126, 255, 0.1);
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #08274A;
+}
+.modal-header button, .modal-footer button, .txtotherwrite button {
+    border: 1px solid #274161;
+    color: #274161;
+    background-color: #274161;
+}
+.modal-header button, .modal-footer button, .txtotherwrite button {
+    width: 70px;
+    height: 26px;
+    border: 1px solid #274161;
+    color: #FFFFFF;
+    font-size: 24px;
+    background-color: #274161;
+    margin: 0px 0px 0px 10px;
+    vertical-align: middle;
+    float: right;
+}.modal-header {
+    height: 35px;
+}
+ .img-thumbnail {
+
+    background-color: #274161;
+    border: 1px solid #08274A;
+
+}
+ .photo{
+     width: 100px;
+     height: 100px;
+ }
+.modal-dialog {
+    margin: 100px auto;
+}
+.modal-footer {
+    border-top: 1px solid #2E5684;
+}
+ .modal-footer button  {
+     font-size: 14px;
+
+}
+ .bootstrap-dialog-title{
+     font-size: 16px;
+     font-weight: 700;
+ }
+ .bootstrap-dialog-message{
+      line-height:2
+ }
+
+ .xdsoft_datetimepicker .xdsoft_label {
+    font-size: 12px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #0B3161;
+}
+.table {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #0B3161;
+}
+
+.modal-xl {
+    width: 1200px;
+}

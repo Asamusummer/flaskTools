@@ -1,0 +1,122 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pagenav{
+	display:inline-block;
+	padding-left:0;
+	margin:20px 0;
+	border-radius:4px;
+  text-align: center;
+}
+.pagenav>li{display:inline}
+.pagenav>li>a,.pagenav>li>span{
+	position:relative;
+	float:left;
+	padding:3px 8px;
+	margin-left:12px;
+	line-height:1.42857143;
+	color:#e5e5e5;
+	text-decoration:none;
+	background-color:#fff;
+	border:1px solid #e5e5e5;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.pagenav>li>a:focus,.pagenav>li>a:hover,.pagenav>li>span:focus,.pagenav>li>span:hover{
+	z-index:2;
+	color:#000000;
+	background-color:#fff;
+	border-color:#000;
+}
+.pagenav>.active>a,.pagenav>.active>a:focus,.pagenav>.active>a:hover,.pagenav>.active>span,.pagenav>.active>span:focus,.pagenav>.active>span:hover{
+	z-index:3;color:#000;
+	cursor:default;
+	background-color:#fff;
+	border-color:#000;
+}
+.pagenav>.disabled>a,.pagenav>.disabled>a:focus,.pagenav>.disabled>a:hover,.pagenav>.disabled>span,.pagenav>.disabled>span:focus,.pagenav>.disabled>span:hover{
+	color:#e5e5e5;
+	cursor:not-allowed;
+	background-color:#fff;
+	border-color:#e5e5e5;
+}
+.pagenav-lg>li>a,.pagenav-lg>li>span{
+	padding:10px 16px;
+	font-size:18px;
+	line-height:1.3333333;
+}
+
+.pagenav-sm>li>a,.pagenav-sm>li>span{
+	padding:5px 10px;
+	font-size:12px;
+	line-height:1.5;
+}
+
+.pager{
+	padding-left:0;
+	margin:20px 0;
+	text-align:center;
+	list-style:none;
+}
+.pager li{
+	display:inline;
+}
+.pager li>a,.pager li>span{
+	display:inline-block;
+	padding:5px 14px;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:15px;
+}
+.pager li>a:focus,.pager li>a:hover{
+	text-decoration:none;
+	background-color:#eee;
+}
+.pager .next>a,.pager .next>span{
+	float:right;
+}
+.pager .previous>a,.pager .previous>span{
+	float:left;
+}
+.pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .disabled>span{
+	color:#777;
+	cursor:not-allowed;
+	background-color:#fff;
+}
+.pageJump{
+	display:inline-block;
+	padding-left:0;
+	margin:20px 10px;
+	border-radius:4px;
+	vertical-align:top;
+}
+.pageJump .button,.pageJump input{
+	font-size:16px;
+	padding:6px 12px;
+	margin-left:-1px;
+	line-height:1.42857143;
+	color:#337ab7;
+	text-decoration:none;
+	background-color:#fff;
+	border:1px solid #ddd
+}
+.pageJump input{
+	width:20px;
+}
+.pageJump-lg .button,.pageJump-lg input{
+	padding:10px 16px;
+	font-size:18px;
+	line-height:1.3333333;
+}
+.pageJump-sm .button,.pageJump-sm input{
+	padding:5px 10px;
+	font-size:12px;
+	line-height:1.5;
+}

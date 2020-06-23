@@ -1,0 +1,103 @@
+
+
+</div>
+
+
+<div id="modal-default" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-default">
+        <div class="modal-content" id="modal-content-modal-default">
+        </div>
+    </div>
+</div>
+
+<div id="modal-lg" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" id="modal-content-modal-lg">
+        </div>
+    </div>
+</div>
+
+<div id="modal-xl" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content" id="modal-content-modal-xl">
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-alert" style="display: none;" aria-hidden="true">
+<div class="modal-dialog" style="margin-top: 20%;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title" style=" line-height: 1.2;font-size: 1.2rem;"><i class="fa fa-exclamation-circle"></i>系统提示</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p id="alert-content" style="width: 350px;"></p>
+    </div>
+    <div class="modal-footer justify-content-between">
+      <button type="button" class="btn btn-default" data-dismiss="modal" style=" margin-right: .25rem;" id="confirm-cancel">确定</button>
+    </div>
+  </div>
+  <!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+<script type="text/javascript">
+    function showModalDialog(url, dtype) {
+        $("#modal-content-" + dtype).load(url,
+            function (response, status) {
+                if (status == "success") {
+                    $('#' + dtype).modal();
+                }
+            }
+        );
+    }
+
+    function showModalAlert(title){
+     $("#alert-content").html(title);
+     $("#modal-alert").modal();
+    }
+        function deleteObj(id,url) {
+               BootstrapDialog.show({
+                        title: "系统提示",
+                        message: "是否确定删除？",
+                        buttons: [{
+                            label: '确定', action: function (dialogItself) {
+                                 dialogItself.close();
+                              $.ajax({
+                                type: 'post',
+                                url: url,
+                                data: {'id': id},
+                                success:function (resp) {
+                                  if (resp.code == '200'){
+                                    BootstrapDialog.show({
+                                                title: "系统提示",
+                                                message: resp.message,
+                                                buttons: [{
+                                                    label: '关闭', action: function (dialogItself) {
+
+                                                        dialogItself.close();
+                                                        location.reload();
+                                                    }
+                                                }]
+                                            });
+                                  }
+                                }
+                              })
+                            }
+                        },{
+                            label: '取消', action: function (dialogItself) {
+                                dialogItself.close();
+                            }
+                        }]
+                    });
+    }
+</script>
+
+
+</body>
+
+</html>

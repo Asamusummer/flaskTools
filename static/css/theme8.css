@@ -1,0 +1,20 @@
+@charset "gb2312";
+body,input,td,div,select,button,textarea{font-family:"Microsoft Yahei", Arial,Century Gothic,Verdana, Geneva, sans-serif;}
+body{/*background-image: url(../images_newui/wallpaper2.jpg);*/background:#ddd;}
+.ribbon ul.menu .submenu {border-top: 1px solid transparent; background: #f6f6f6 url(../images/menu-bg.png) no-repeat;width: 1000px;}
+.Alpha{filter:alpha(opacity=90);opacity: 0.90;}
+.submenu h2 {background:#eee;color:#aaa;}
+ul.menu li {margin-left:10px;}
+ul.menu li:first-child{margin-left:0;}
+ul.menu li a{color:#fff;}
+.ribbon ul.menu li a{background: url(../images/menuitem_background2.png) no-repeat;}
+.ribbon ul.menu li a.active{background-image: url(../images/menuitem_background.png);}
+.ribbon ul.menu li li {border-right: 1px solid #ddd;margin-left:0;}
+.ribbon ul.menu li ul li div:hover,.ribbon ul.menu li ul li div.nav_active{border: 1px solid #ccc; background:#ddd;}
+.ribbon ul.menu li ul div.ribbon-list:hover{background: none; border:0;}
+.ribbon ul.menu li ul div.ribbon-list div:hover,.ribbon ul.menu li ul div.ribbon-list div.nav_active {border: 1px solid #ccc; background:#ddd;}
+.mainContainer ul.ribbon { border-bottom: none;}
+
+body.newui-bg,.nav_popup_link:hover,.content_title{background-color:#27274D;}
+.nav_orb_btn:hover ,.nav_orb_btn2,.nav_orb_btn3:hover,.user_firstname{background-color: #1462a6;}
+.nav_popupinner,.nav_popupinner2{border:#197acf 1px solid;}

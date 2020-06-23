@@ -1,0 +1,195 @@
+<!doctype html>
+{% load filter %}
+<head>
+  <meta charset="UTF-8">
+  <title>小鹰云-体温筛查平台</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/swiper.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/static/css/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="/static/css/calendar.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <link rel="stylesheet" href="/static/css/info.css">
+  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body style="display: block;min-height: 200px;text-align: left;">
+<div class="wrapper" style="padding-top: 20px;">
+  <div class="content-wrapper">
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>人员数量</h3>
+                <p style="text-align: center; font-weight: 700">共 {{ people_count }} 名人员</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+              <a href="/user/userlist/1/" class="small-box-footer">查看详细 <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-primary">
+              <div class="inner">
+                <h3>访客数量</h3>
+                <p style="text-align: center; font-weight: 700">共 {{ visitor_count }} 名访客</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+              </div>
+              <a href="/visitor/visitorcheck/1/" class="small-box-footer">查看详细 <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>设备数量</h3>
+                <p style="text-align: center;font-weight: 700">共 {{ deiver_count }} 台设备</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+              <a href="/device/videodevicelist/1/" class="small-box-footer">查看详细 <i
+                  class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>管理区域</h3>
+                <p style="text-align: center; font-weight: 700">共 {{ area_count }} 个区域</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+              <a href="/area/list/1/" class="small-box-footer">查看详细 <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+
+          <div class="col-md-6" style="background-color: #1A2839;">
+            <div class="card ">
+              <div class="card-header">
+                <h3 class="card-title">最新抓拍数据<a href="/temperture/templist/" style="color: #fff;float: right">查看更多</a></h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form role="form">
+                <table id="example2" class="table table-bordered table-hover dataTable dtr-inline"
+                       role="grid" aria-describedby="example2_info" style="text-align: center">
+                  <tr role="row" class="odd">
+                    <th>头像</th>
+                    <th>姓名</th>
+                    <th>身份</th>
+                    <th>位置</th>
+                    <th>时间</th>
+                  </tr>
+                  {% for entity in new_list %}
+                    <tr role="row" class="odd">
+                      <td>
+                        <img src="{{ entity.catch_img }}" alt="" width="30px" height="30px" onerror="this.src='/static/images/usericon.png'">
+                      </td>
+                      <td>{{ entity.user_name }}</td>
+                      <td>{{ entity.identity }}</td>
+                      <td>{{ entity.catch_place }}</td>
+                      <td>{{ entity.catch_time }}</td>
+                    </tr>
+                  {% endfor %}
+                </table>
+              </form>
+            </div>
+            <div id="latest7TradeData" class="heightcharsContent" style="margin:10px;"></div>
+          </div>
+
+          <div class="col-md-6" style="background-color: #1A2839;">
+            <div class="card ">
+              <div class="card-header">
+                <h3 class="card-title">最近7日抓拍概况</h3>
+              </div>
+            </div>
+            <div id="lastWeekTop10" class="heightcharsContent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+</body>
+<script src="/static/js/jquery-1.11.0.min.js"></script>
+<script src="/static/js/hightcharts/highcharts.js"></script>
+<script src="/static/js/hightcharts/gray.js"></script>
+<script type="text/javascript">
+  show();
+  function show() {
+    $.ajax({
+      type: 'GET',
+      url: '/databoard/getemvisdraw/',
+      success: function (data) {
+        Highcharts.chart('lastWeekTop10', {
+          title: {
+            text: '',
+          },
+          chart: {
+            backgroundColor: 'rgba(39, 65, 97, 0.42)',
+            height: 547,
+          },
+          credits: {
+            enabled: false
+          },
+          legend: {
+            orient: 'horizontal',
+            align: 'center',
+            verticalAlign: 'top',
+            textStyle: {
+              fontSize: 18,
+              color: '#6AF9C4'
+            },
+          },
+          xAxis: {
+            title:{text:"抓拍日期"},
+            categories: data.date_lsit,
+          },
+          yAxis: {
+              title:{text:"人员数量"},
+            min: 0,
+            lineColor: '#3C4C5D',
+            gridLineColor: '#3C4C5D',
+            gridLineWidth: '1'
+          },
+          series: [{
+            type: 'line',
+            name: '人员',
+            data: data.employ_list,
+            marker: {
+                radius: 4
+            }
+          }, {
+            type: 'line',
+            name: '访客',
+            data: data.visitor_list,
+            marker: {
+              radius: 4
+            }
+          }]
+        });
+      }
+    })
+  }
+</script>
+

@@ -1,0 +1,71 @@
+
+{% include "include/header.html" %}
+<div class="list_top col-xs-12" style="padding-left: 1px;">
+    <label>用户表管理</label>
+</div>
+<hr class="col-xs-12"/>
+<div class="searchback col-xs-12">
+    <form class="searchform col-xs-12" autocomplete="off" id="af" action="" method="get">
+    
+        <div class="form-style">
+        <p style="text-align: center">用户名:</p>
+        <input class="col-xs-10" type="text" name="select_user" value="{{condition.select_user}}"/>
+        </div>
+        
+        <div class="form-style">
+        <p style="text-align: center">性别:</p>
+        <input class="col-xs-10" type="text" name="select_sex" value="{{condition.select_sex}}"/>
+        </div>
+        
+        <div class="form-style">
+        <p style="text-align: center">手机号:</p>
+        <input class="col-xs-10" type="text" name="select_phone" value="{{condition.select_phone}}"/>
+        </div>
+         
+        <div class="form-style" style="margin-right: 0px;">
+        <button type="submit">查询</button>
+        <button type="button" style="margin-left: 10px;" onclick="showModalDialog('/people/view', 'modal-lg')">添加</button>
+        </div>
+    </form>
+</div>
+<hr class="col-xs-12"/>
+<div class="table-responsive listheight col-xs-12" style="padding-bottom: 50px;">
+<table class="table" style="table-layout:fixed; text-align: center">
+  <thead>
+   <tr>
+   <th style='width:200px;'>用户名</th> 
+ <th style='width:200px;'>密码</th> 
+ <th style='width:200px;'>性别</th> 
+ <th style='width:200px;'>手机号</th> 
+ <th style='width:200px;'>操作</th> 
+
+  </tr>
+  </thead>
+  <tbody>
+  {% for data in entityList %}
+    <tr>
+            <td style='width:200px'>{{data.user}}</td>
+            <td style='width:200px'>{{data.password}}</td>
+            <td style='width:200px'>{{data.sex}}</td>
+            <td style='width:200px'>{{data.phone}}</td>
+      <td>
+        <div class="btn-group">
+          <button class="btn btn-primary" onclick="showModalDialog('/people/edit?Id=' + {{data.id }},'modal-lg')">编辑
+          </button>
+          <button class="btn btn-danger" onclick="deleteObj('{{ data.id }}', '/people/delete')">删除</button>
+        </div>
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<div class="row">
+  <div class="col-sm-12 col-md-7 col-md-offset-5" style="margin: 0 36%">
+    {{ html |safe }}
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+</script>
+{% include "include/footer.html" %}
+        

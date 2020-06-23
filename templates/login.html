@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>用户登录</title>
+    <link rel="stylesheet" href="/static/css/login.css"/>
+</head>
+<body>
+<div class="header" style="margin: 0px; width: 100%;">
+    <img style="float: right; width: 260px; height: 60px;" src="/static/images/logo_title.png">
+</div>
+<div>
+    <div class="loginback">
+{#        <img src="{% if title.logo %}{{ title.logo }}{% else %}/static/images/logo.png{% endif %}">#}
+      <h1>用户登录</h1>
+        <div>
+            <form action="/login/" method="post">
+                <input placeholder="请输入账号" type="text" name="username"/>
+                <input placeholder="请输入密码" type="password" name="password"/>
+                <button>登录</button>
+{#                <p style="color:#ffffff">#}
+{#                    {% ifequal err_code 1001 %}密码错误{% endifequal %}#}
+{#                    {% ifequal err_code 1002 %}需要注册{% endifequal %}#}
+{#                    {% ifequal err_code 1003 %}人员不存在{% endifequal %}#}
+{#                    {% ifequal err_code 1004 %}登录失败{% endifequal %}#}
+{#                </p>#}
+            </form>
+        </div>
+    </div>
+</div>
+<div class="footer" style="width: 100%;">
+    <p style="color: white;">版本 v2.0</p>
+</div>
+
+</body>
+<script>
+
+</script>
+
+</html>

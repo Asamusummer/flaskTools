@@ -1,0 +1,128 @@
+*{margin: 0;padding: 0;}
+ul li {list-style: none;}
+.calendar{
+    width: 85%;
+    height: auto;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+}
+.title1{
+    width: 100%;
+    height: 75px;
+    text-align: center;
+    margin: 0 auto;
+    /*background: chocolate;*/
+}
+.title1 span{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.uptubiao{
+    margin-top: 1%;
+}
+
+.downtubiao{
+    margin-top: 1%;
+    margin-right: 18%;
+}
+
+.tubiao{
+    margin-top: -10%;
+    margin-left: 62%;
+    width: 60%;
+}
+.tubiao span{
+    padding: 3px;
+    font-size: 9px;
+    font-weight: bold;
+    margin-right: 3%;
+}
+.main_body{
+    width: 100%;
+    height: auto;
+}
+.main_body ul {
+    width: 100%;
+    font-weight:bold;
+    font-size:14px;
+}
+.month_week ul li{
+    margin-top: 1%;
+    width:14.28%;
+    height:36px;
+    line-height:36px;
+    list-style-type:none;
+    display:block;
+    box-sizing:border-box;
+    float:left;
+    text-align:center;
+    font-size: 24px;
+    color: white;
+    /*border: 1px solid red;*/
+}
+
+
+/*.dayslist li{*/
+/*    width:14.28%;*/
+/*    height:70px;*/
+/*    line-height:36px;*/
+/*    list-style-type:none;*/
+/*    display:block;*/
+/*    box-sizing:border-box;*/
+/*    float:left;*/
+/*    text-align:center;*/
+/*    border: 1px solid red;*/
+/*}*/
+.daylist {
+    width: 100%;
+    height: 100px;
+}
+
+.small_li{
+    width: 10.28%;
+    height: 50px;
+    /*border: 1px solid pink;*/
+    box-sizing:border-box;
+    float: left;
+    margin: 10px 12px;
+}
+
+
+
+
+.small_li_left{
+    height: 60px;
+    width: 30%;
+    background: grey;
+    line-height: 60px;
+    float: left;
+}
+.small_li_top{
+    width: 70%;
+    height: 30px;
+    float: left;
+    background: rgb(20,46,73);
+}
+.small_li_bottom{
+    width: 70%;
+    height: 30px;
+    float: left;
+    background: rgb(20,46,73);
+}
+
+.lightgrey{
+    color:#a8a8a8; /*浅灰色*/
+}
+.darkgrey{
+    color:#565656; /*深灰色*/
+}
+.green{
+    color:#6ac13c; /*绿色*/
+}
+.greenbox{
+    border:1px solid #6ac13c;
+    background:#e9f8df; /*浅绿色背景*/
+}

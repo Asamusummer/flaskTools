@@ -1,0 +1,53 @@
+.modaltop20{
+ top: 20%;
+}
+.modaltop5{
+ top: 5%;
+}
+.modalwidth30{
+	width:30%;}
+.modalwidth50{
+	width:50%;}
+.modal-header{
+	height:50px;
+	}
+.modal-header button,.modal-footer button,.txtotherwrite button{
+	width: 70px;
+	height: 26px;
+	border: 1px solid #000000;
+	color: #000000;
+	font-size: 14px;
+	background-color: #ffffff;
+	margin: 0px 0px 0px 10px;
+	vertical-align: middle;
+	float: right;
+	}
+.modal-header h4{
+	font-size:20px;}
+.sfexpress,.otherexpress{
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+}
+.sfexpress .txtwrite,.otherexpress .txtwrite,.uploadfile .txtwrite{
+	width:50%;
+  padding: 0px 20px 20px 0px;}
+.txtotherwrite{
+  	float: left;
+  	width: 100%;
+  	padding: 0px 20px 20px 0px;
+}
+.txtotherwrite .txtwrite{
+  width:40%;
+  padding: 0px 20px 20px 0px;
+}
+.txtotherwrite .txtwrite input,.txtotherwrite .txtwrite select{
+    width: 50%;
+    font-size: 14px;
+    color: #000000;
+}
+.txtotherwrite .keytxt{
+  width: 60%;
+}
+.container-fluid .table-responsive{
+    max-height: 500px;
+}

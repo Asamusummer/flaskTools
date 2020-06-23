@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.contanint {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+Header {
+    width: 100%;
+    height: 60px;
+    background: rgb(231, 231, 231);
+}
+
+.headpic {
+    float: left;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.middle-title {
+    text-align: center;
+    line-height: 60px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 24px
+
+}
+
+.right-title {
+    float: right;
+    font-size: 24px;
+    margin-top: -48px
+}
+
+.info {
+    width: 95%;
+    height: 60px;
+    margin-top: 20%;
+    border-bottom: 2px solid rgb(231, 231, 231);
+    margin-left: 1px
+}
+
+.date {
+    float: right;
+    width: 200px;
+    height: 100%;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px
+}
+
+.info span {
+    font-size: 24px;
+    line-height: 40px;
+    margin-left: 5px
+}
+
+.main-body {
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.first_title {
+    width: 95%;
+    height: 50px;
+    margin: 10px auto
+}
+
+.first_title .dot {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 5px;
+    float: left
+}
+
+.bgcad {
+    background: green;
+}
+
+.first_title .time-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 45px;
+    float: left;
+    margin-top: 8px
+}
+
+.first_title .time {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 45px;
+    float: left;
+    margin-top: 8px
+}
+
+.main-body .second-title {
+    width: 95%;
+    height: 250px;
+    margin: 0 35px;
+    border-left: 2px solid rgb(231, 231, 231)
+}
+
+.main-body .second-title .second-list-title {
+    width: 80%;
+    height: 50px;
+    margin: 0 30px;
+    font-size: 24px;
+    line-height: 50px;
+    color: grey
+}
+
+.main-body .thr-title {
+    width: 95%;
+    height: 100px;
+    margin: 0 35px;
+}
+
+.main-body .thr-title .second-list-title {
+    width: 80%;
+    height: 50px;
+    margin: 0 30px;
+    font-size: 24px;
+    line-height: 50px;
+    color: grey
+}
+
+.main-body .attend-click {
+    margin: 50px auto;
+    margin-right: 32%;
+    background: dodgerblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background: rgb(231, 231, 231);
+    position: absolute
+}
+
+/*考勤打卡的样式*/
+.msg_wrap {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    z-index: 20;
+    transition: all .3s;
+    transform: translate(-40%, -40%) scale(1, 1);
+    background: #fff;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 10px #eee;
+    font-size: 10px;
+    /* overflow: hidden; */
+    display: none;
+}
+
+.ul__text .ul__style li {
+    display: block;
+    width: 100%;
+    height: 50px;
+    /* background-color: gray; */
+    box-shadow: 0 0 10px #eee;
+    margin: 2px auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.ul__text {
+    width: 450px;
+    height: 300px;
+    overflow: auto;
+    /* margin-left: 24px; */
+}
+
+.msg__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, .4);
+    transition: all .3s;
+    opacity: 0;
+}
+
+@media screen and ( max-width: 420px) {
+    Header {
+        width: 100%;
+        height: 60px;
+        background: rgb(231, 231, 231);
+    }
+
+    .info {
+        width: 100%;
+        margin: 0 auto
+    }
+
+    .info span {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 20px;
+        text-align: right
+    }
+
+    .main-body {
+        width: 100%
+    }
+
+    .first_title {
+        margin: 0 20px
+    }
+
+    .first_title .time-title {
+        font-size: 18px
+    }
+
+    .first_title .dot {
+        width: 20px;
+        height: 20px
+    }
+
+    .first_title .time {
+        font-size: 18px
+    }
+
+    .main-body .second-title {
+        width: 100%
+    }
+
+    .main-body .second-title .second-list-title {
+        font-size: 14px;
+    }
+
+    .main-body .second-title {
+        height: 200px
+    }
+
+    .main-body .thr-title {
+        width: 100%
+    }
+
+    .main-body .thr-title .second-list-title {
+        font-size: 14px
+    }
+
+    .main-body .attend-click {
+        width: 100px;
+        height: 100px;
+        line-height: 100px
+    }
+
+    .footer {
+        width: 100%
+    }
+
+    .ul__text {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+.show {
+    display: none;
+}

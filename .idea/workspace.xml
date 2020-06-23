@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aea73e29-f987-4f2f-8c2a-e6e0dfd45fdb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dLXRPQRdMeaxDMDcmI9raGusy0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/until" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\flaskpj\src\until" />
+      <recent name="D:\Desktop\flaskpj" />
+      <recent name="D:\Desktop\flaskpj\templates\include" />
+      <recent name="D:\Desktop\flaskpj\templates\databoard" />
+      <recent name="D:\Desktop\flaskpj\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="flaskpj" type="PythonConfigurationType" factoryName="Python">
+      <module name="flaskpj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aea73e29-f987-4f2f-8c2a-e6e0dfd45fdb" name="Default Changelist" comment="" />
+      <created>1592205337939</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592205337939</updated>
+      <workItem from="1592205340807" duration="9412000" />
+      <workItem from="1592272503272" duration="11130000" />
+      <workItem from="1592376144131" duration="11381000" />
+      <workItem from="1592446348378" duration="21016000" />
+      <workItem from="1592531474339" duration="18283000" />
+      <workItem from="1592576178297" duration="13460000" />
+      <workItem from="1592878919093" duration="13051000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="336" y="318" width="922" height="592" key="#xdebugger.evaluate" timestamp="1592619793593">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="336" y="318" width="922" height="592" key="#xdebugger.evaluate/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592468768963" />
+    <state x="336" y="318" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1592619793593" />
+    <state x="2322" y="484" key="FileChooserDialogImpl" timestamp="1592889244019">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state x="2322" y="484" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592889244019" />
+    <state x="2635" y="269" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592382300804" />
+    <state width="1037" height="449" key="GridCell.Tab.0.bottom" timestamp="1592884386701">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="449" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884386701" />
+    <state width="1877" height="331" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1592463663344" />
+    <state width="1705" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592457203787" />
+    <state width="1877" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="449" key="GridCell.Tab.0.center" timestamp="1592884386701">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="449" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884386701" />
+    <state width="1877" height="331" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1592463663343" />
+    <state width="1705" height="260" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592457203787" />
+    <state width="1877" height="228" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="449" key="GridCell.Tab.0.left" timestamp="1592884386701">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="449" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884386701" />
+    <state width="1877" height="331" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1592463663343" />
+    <state width="1705" height="260" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592457203787" />
+    <state width="1877" height="228" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="449" key="GridCell.Tab.0.right" timestamp="1592884386701">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="449" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884386701" />
+    <state width="1877" height="331" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1592463663344" />
+    <state width="1705" height="260" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592457203787" />
+    <state width="1877" height="228" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="454" key="GridCell.Tab.1.bottom" timestamp="1592884135183">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135183" />
+    <state width="1705" height="315" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="454" key="GridCell.Tab.1.center" timestamp="1592884135183">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135183" />
+    <state width="1705" height="315" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="454" key="GridCell.Tab.1.left" timestamp="1592884135183">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135183" />
+    <state width="1705" height="315" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142039" />
+    <state width="1037" height="454" key="GridCell.Tab.1.right" timestamp="1592884135183">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135183" />
+    <state width="1705" height="315" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="454" key="GridCell.Tab.2.bottom" timestamp="1592884135184">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135184" />
+    <state width="1705" height="315" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="454" key="GridCell.Tab.2.center" timestamp="1592884135183">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135183" />
+    <state width="1705" height="315" key="GridCell.Tab.2.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="454" key="GridCell.Tab.2.left" timestamp="1592884135183">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135183" />
+    <state width="1705" height="315" key="GridCell.Tab.2.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state width="1037" height="454" key="GridCell.Tab.2.right" timestamp="1592884135183">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1037" height="454" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592884135183" />
+    <state width="1705" height="315" key="GridCell.Tab.2.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592215026257" />
+    <state width="1877" height="228" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1592626142040" />
+    <state x="2397" y="160" key="SettingsEditor" timestamp="1592205360800">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2397" y="160" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1592205360800" />
+    <state x="2123" y="437" width="672" height="678" key="search.everywhere.popup" timestamp="1592537747838">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state x="2123" y="437" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1080.1890@1920.0.1080.1890" timestamp="1592537747838" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/flaskpj$flaskpj.coverage" NAME="flaskpj Coverage Results" MODIFIED="1592884352177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

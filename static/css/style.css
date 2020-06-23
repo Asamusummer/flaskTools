@@ -1,0 +1,55 @@
+﻿html
+{
+	overflow-x: hidden;
+	height: 100%;
+    font-size: 10pt;
+}
+
+div{
+    font-size: 13px;
+}
+
+body
+{
+    font-size: 10pt;
+    padding: 0px;
+    margin: 0px;
+    color:#333;
+    background-color:#FFF;
+    background-repeat: repeat-x;
+}
+
+h1
+{
+	font-size: 14pt;
+}
+
+h2
+{
+	font-size: 13pt;
+	color:#fff;
+	background-color:#CCC;
+}
+
+img
+{
+    border: 0px;
+
+}
+
+a
+{
+    color: #333;
+    text-decoration: underline;
+	font-size: 14pt;
+	}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.mainContainer
+{
+    width: 100%;
+}

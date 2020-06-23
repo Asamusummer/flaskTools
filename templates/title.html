@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>菜单</title>
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/static/css/theme8.css" rel="stylesheet" type="text/css">
+	<link href="/static/css/ribbon.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <script src="/static/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="/static/js/jquery.ribbon.js" type="text/javascript"></script>
+    <script src="/static/js/greedy-schoolpallog.js" type="text/javascript"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body class="newui-bg" style="padding-top: 120px;background:#102238;">
+    <div class="mainContainer">
+        <ul class="ribbon">
+            <li style="list-style: none none inside;float: left;width:210px;">
+                <ul class="orb">
+                    <li  style="width:290px;color:white;font-size:26px;"> 
+{#                        <a href="javascript:void(0);" class="nav_orb_btn" style="width: 80px;"></a>#}
+{#                    <div style="font-size:30px;font-weight:700;width: 400px;color:#ffffff;">&nbsp;&nbsp;<img src="{% if title.logo %}{{ title.logo }}{% else %}/media/小鹰logo111.png{% endif %}" alt="">&nbsp;&nbsp;{{ title.title }}</div>#}
+                      {{ title.title }}
+                    </li>
+                </ul>
+       		</li>
+	       <li style="list-style: none none inside;float: left;">
+	        <ul class="menu">
+				<li title="平台首页"> <div onclick="parent.main.location.href ='/databoard/dataindex';" class="nav"><img src="/static/images/1.png" alt="New" width="40" height="40"/><span>平台首页</span></div></li>
+                <li title="人员管理"> <div onclick="parent.main.location.href ='/user/list'" class="nav"><img src="/static/images/3.png" alt="New" width="40" height="40"/><span>人员管理</span></div></li>
+                <li title="访客管理"> <div onclick="parent.main.location.href ='/visitor/showvig/'" class="nav"><img src="/static/images/7.png" alt="New" width="40" height="40"/><span>访客管理</span></div></li>
+               <li title="数据管理"> <div onclick="parent.main.location.href ='/checkdataboard/getcatchcomparelist/'" class="nav"><img src="/static/images/13.png" alt="New" width="40" height="40"/><span>数据管理</span></div></li>
+{#                <li title="测温管理"> <div onclick="parent.main.location.href ='/temperture/templist/'" class="nav"><img src="/static/images/19.png" alt="New" width="40" height="40"/><span>测温管理</span></div></li>#}
+                <li title="设备管理"> <div onclick="parent.main.location.href ='/device/videodevicelist/1/'" class="nav"><img src="/static/images/6.png" alt="New" width="40" height="40"/><span>设备管理</span></div></li>
+                 <li title="人员下发"> <div onclick="parent.main.location.href ='/device/importpeopletodevice/'" class="nav"><img src="/static/images/8.png" alt="New" width="40" height="40"/><span>人员下发</span></div></li>
+                <li title="系统配置"> <div onclick="parent.main.location.href ='/other/sysconfig/'" class="nav"><img src="/static/images/12.png" alt="New" width="40" height="40"/><span>系统配置</span></div></li>
+                <li title="测温展板"> <div onclick="window.open('/databoard/','_blank');" class="nav"><img src="/static/images/4.png" alt="New" width="40" height="40"/><span>测温展板</span></div></li>
+                <li title="考勤展板"> <div onclick="window.open('/checkdataboard/','_blank');" class="nav"><img src="/static/images/4.png" alt="New" width="40" height="40"/><span>考勤展板</span></div></li>
+{#                <li title="密码修改"> <div onclick="showModalDialog('/user/updatepassword/', 'modal-lg')" class="nav"><img src="/static/images/12.png" alt="New" width="40" height="40"/><span>密码修改</span></div></li>#}
+                <li title="退出系统"><div onclick="parent.location.href ='/logout';" class="nav"><img src="/static/images/14.png" alt="New" width="32" height="32"/><span>退出系统</span></div></li>
+	        </ul>
+			</li>
+        </ul>
+    </div>
+    <div class="textbox">
+    </div>
+</body></html>
+{% include 'include/footer.html' %}
